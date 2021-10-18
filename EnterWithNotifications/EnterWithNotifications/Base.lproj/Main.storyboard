@@ -11,7 +11,6 @@
         <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EnterWithNotifications" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -31,6 +30,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="nE0-xj-DAk"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1238" y="1117"/>
         </scene>
@@ -63,7 +63,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="CYU-ZZ-Mas" kind="show" id="7zL-tJ-krI"/>
+                                    <segue destination="CYU-ZZ-Mas" kind="show" identifier="moveToYellow" id="7zL-tJ-krI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -76,10 +76,10 @@
             </objects>
             <point key="canvasLocation" x="2147.826086956522" y="423.88392857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Yellow View Controller-->
         <scene sceneID="pXT-Is-b4E">
             <objects>
-                <viewController id="CYU-ZZ-Mas" sceneMemberID="viewController">
+                <viewController restorationIdentifier="yellowView" storyboardIdentifier="yellowView" id="CYU-ZZ-Mas" customClass="YellowViewController" customModule="EnterWithNotifications" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mq4-Bh-eP8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -103,6 +103,10 @@
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="BcE-xV-ReP"/>
+                    <connections>
+                        <outlet property="bodyLabel" destination="nq8-35-rSP" id="cqM-Mh-N3u"/>
+                        <outlet property="titleLabel" destination="B9C-gw-c4K" id="b4P-L5-9lP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RS7-Ek-G3t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -111,10 +115,20 @@
         <!--Item 1-->
         <scene sceneID="dgy-Lu-zLn">
             <objects>
-                <viewController id="gmp-tN-KAe" sceneMemberID="viewController">
+                <viewController id="gmp-tN-KAe" customClass="ViewController" customModule="EnterWithNotifications" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Wy-Jt-M9u">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMG-YS-bcQ">
+                                <rect key="frame" x="184" y="433" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="notify:" destination="gmp-tN-KAe" eventType="touchUpInside" id="Nmw-Ta-TBf"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="9e5-kg-VON"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                     </view>

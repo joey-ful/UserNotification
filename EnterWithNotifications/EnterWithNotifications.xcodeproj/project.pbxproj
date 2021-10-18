@@ -13,6 +13,7 @@
 		C781D63D2602335200957614 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C781D63B2602335200957614 /* Main.storyboard */; };
 		C781D63F2602335300957614 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C781D63E2602335300957614 /* Assets.xcassets */; };
 		C781D6422602335300957614 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C781D6402602335300957614 /* LaunchScreen.storyboard */; };
+		D4726C22271D5203008FAB6C /* YellowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4726C21271D5203008FAB6C /* YellowViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C781D63E2602335300957614 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C781D6412602335300957614 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C781D6432602335300957614 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4726C21271D5203008FAB6C /* YellowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				C781D6372602335200957614 /* SceneDelegate.swift */,
 				C781D6392602335200957614 /* ViewController.swift */,
 				C781D63B2602335200957614 /* Main.storyboard */,
+				D4726C21271D5203008FAB6C /* YellowViewController.swift */,
 				C781D63E2602335300957614 /* Assets.xcassets */,
 				C781D6402602335300957614 /* LaunchScreen.storyboard */,
 				C781D6432602335300957614 /* Info.plist */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4726C22271D5203008FAB6C /* YellowViewController.swift in Sources */,
 				C781D63A2602335200957614 /* ViewController.swift in Sources */,
 				C781D6362602335200957614 /* AppDelegate.swift in Sources */,
 				C781D6382602335200957614 /* SceneDelegate.swift in Sources */,
@@ -287,6 +291,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SZAN3SDFY5;
 				INFOPLIST_FILE = EnterWithNotifications/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,6 +311,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SZAN3SDFY5;
 				INFOPLIST_FILE = EnterWithNotifications/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
